@@ -180,18 +180,16 @@ function finish(){
  $('resultMessage').textContent=passed?'恭喜你成為生態小達人！繼續保持好奇心，探索校園大自然！':'沒關係！多認識校園生態，再挑戰一次，你一定會更進步！';
  showPage(5);
 }
-$('startBtn').addEventListener('click',start);
+$('startBtn').addEventListener('click', start);
 
-// 修正下一題按鈕
-document.querySelectorAll('.nextBtn').forEach(btn=>{
-  btn.addEventListener('click',next);
+document.querySelectorAll('.nextBtn').forEach(btn => {
+  btn.addEventListener('click', next);
 });
 
-// 再玩一次
-$('againBtn').addEventListener('click',()=>{
-  index=0;
-  score=0;
-  locked=false;
+$('againBtn').addEventListener('click', () => {
+  index = 0;
+  score = 0;
+  locked = false;
   showPage(1);
 });
 
